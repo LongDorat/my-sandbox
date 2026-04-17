@@ -1,0 +1,30 @@
+{
+    "name": "Sandbox Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features":{
+        "ghcr.io/devcontainers/features/common-utils" :{
+            "configureZshAsDefaultShell": true
+        }
+    },
+    "mounts": [ 
+        "source=sandbox-volume,target=/home/vscode/src,type=volume"
+    ],
+    "workspaceFolder": "/home/vscode/src",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot-chat",
+                "streetsidesoftware.code-spell-checker",
+                "adpyke.codesnap",
+                "EditorConfig.EditorConfig",
+                "mhutchie.git-graph",
+                "yzhang.markdown-all-in-one",
+                "esbenp.prettier-vscode",
+                "foxundermoon.shell-format",
+                "Gruntfuggly.todo-tree"
+            ]
+        }
+    },
+    "postCreateCommand": "sudo chown -R vscode:vscode /home/vscode/src"
+}
