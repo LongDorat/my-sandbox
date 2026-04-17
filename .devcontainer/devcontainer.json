@@ -1,15 +1,15 @@
 {
     "name": "Sandbox Dev Container",
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-    "features":{
-        "ghcr.io/devcontainers/features/common-utils:2" :{
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
             "configureZshAsDefaultShell": true
         },
-        "ghcr.io/devcontainers/features/dotnet:2": {
-            "version": 10
+        "ghcr.io/devcontainers/features/dotnet": {
+            "version": "10.0"
         }
     },
-    "mounts": [ 
+    "mounts": [
         "source=sandbox-volume,target=/home/vscode/src,type=volume"
     ],
     "workspaceFolder": "/home/vscode/src",
@@ -26,7 +26,6 @@
                 "esbenp.prettier-vscode",
                 "foxundermoon.shell-format",
                 "Gruntfuggly.todo-tree",
-
                 // Specific language extensions
                 "ms-dotnettools.csdevkit"
             ]
