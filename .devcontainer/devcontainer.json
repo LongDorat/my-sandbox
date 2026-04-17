@@ -2,10 +2,10 @@
     "name": "Sandbox Dev Container",
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features":{
-        "ghcr.io/devcontainers/features/common-utils:latest" :{
+        "ghcr.io/devcontainers/features/common-utils:2" :{
             "configureZshAsDefaultShell": true
         },
-        "ghcr.io/devcontainers/features/dotnet:latest": {
+        "ghcr.io/devcontainers/features/dotnet:2": {
             "version": 10
         }
     },
