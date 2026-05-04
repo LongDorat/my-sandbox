@@ -9,11 +9,6 @@
             "version": "10.0"
         }
     },
-    "mounts": [
-        "source=sandbox-volume,target=/home/vscode/src,type=volume"
-    ],
-    "workspaceFolder": "/home/vscode/src",
-    "remoteUser": "vscode",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -30,6 +25,5 @@
                 "ms-dotnettools.csdevkit"
             ]
         }
-    },
-    "postCreateCommand": "sudo chown -R vscode:vscode /home/vscode/src"
+    }
 }
