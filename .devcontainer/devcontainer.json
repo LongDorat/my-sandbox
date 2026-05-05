@@ -1,6 +1,6 @@
 {
     "name": "Sandbox Dev Container",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "image": "mcr.microsoft.com/devcontainers/base:alpine",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "configureZshAsDefaultShell": true
@@ -14,7 +14,6 @@
             "extensions": [
                 "GitHub.copilot-chat",
                 "streetsidesoftware.code-spell-checker",
-                "adpyke.codesnap",
                 "EditorConfig.EditorConfig",
                 "mhutchie.git-graph",
                 "yzhang.markdown-all-in-one",
