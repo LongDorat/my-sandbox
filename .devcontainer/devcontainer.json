@@ -1,7 +1,10 @@
 {
     "name": "Sandbox Dev Container",
-    "build": {
-        "dockerfile": "Dockerfile"
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/dotnet": {
+            "version": "latest"
+        }
     },
     "customizations": {
         "vscode": {
